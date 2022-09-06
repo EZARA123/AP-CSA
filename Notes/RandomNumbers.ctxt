@@ -1,0 +1,8 @@
+#BlueJ class context
+comment0.target=RandomNumbers
+comment0.text=\r\n\ Write\ a\ description\ of\ class\ RnadomStuff\ here.\r\n\r\n\ @author\ Elijah\ Zaragoza\ \r\n\ @version\ 9/2/22\r\n
+comment1.params=
+comment1.target=void\ random()
+comment2.params=
+comment2.target=void\ random2()
+numComments=3
