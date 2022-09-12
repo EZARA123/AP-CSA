@@ -1,4 +1,10 @@
 #BlueJ class context
 comment0.target=Sheild
 comment0.text=\r\n\ Write\ a\ description\ of\ class\ Phone\ here.\r\n\r\n\ @author\ (your\ name)\r\n\ @version\ (a\ version\ number\ or\ a\ date)\r\n
-numComments=1
+comment1.params=metalType\ sheildShape\ sheildHandle\ size\ color
+comment1.target=Sheild(java.lang.String,\ java.lang.String,\ java.lang.String,\ double,\ java.awt.Color)
+comment2.params=
+comment2.target=Sheild()
+comment3.params=
+comment3.target=java.lang.String\ getMetal()
+numComments=4
