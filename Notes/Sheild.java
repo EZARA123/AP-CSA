@@ -13,8 +13,7 @@ public class Sheild
     private int durability = 100;
     private Color color;
     private String handle;
-    
-    
+
     public String owner;
     public Sheild(String metalType, String sheildShape, String sheildHandle,
     double size, Color color)
@@ -33,8 +32,17 @@ public class Sheild
         size = 4.3;
         color = new Color(184, 184, 184);
     }
-    
+
     public String getMetal(){
         return metal;
+    }
+
+    public void breakSheild(){
+        durability = 0;
+        System.out.println("It Broke, Sorry :'(");
+    }
+
+    public double getSize(){
+        return size;
     }
 }
