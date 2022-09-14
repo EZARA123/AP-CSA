@@ -1,5 +1,4 @@
 import java.util.Scanner;
-import java.lang.Math;
 /**
  * Write a description of class BlackJack here.
  *
@@ -9,11 +8,13 @@ import java.lang.Math;
 public class BlackJack
 {
     static Scanner scanner = new Scanner(System.in);
-    public static void blackJack(){
-        int card = (int)(Math.random() * 10 + 1);
-        int playerCards;
-        int dealerCards;
-        int total;
-        
+
+    public static void game(){
+        Hand player = new Hand();
+        Hand dealer = new Hand();
+        System.out.println("Your got a "+ player.getCard1()+" and a "+ player.getCard2()+" ");
+        System.out.println("Total is: " + player.getTotal());
+        System.out.println("The Dealer's card is " + dealer.getDealerTotal());
+        System.out.println("Would you like to Hit or Stand?");
     }
 }
