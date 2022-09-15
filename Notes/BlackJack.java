@@ -16,5 +16,32 @@ public class BlackJack
         System.out.println("Total is: " + player.getTotal());
         System.out.println("The Dealer's card is " + dealer.getDealerTotal());
         System.out.println("Would you like to Hit or Stand?");
+
+        while(dealer.getDealerTotal() < 21 && player.getTotal() < 21){
+            String answer = scanner.next();
+            if(answer.equals("Hit")){
+                player.hit();
+                System.out.println("Your new Total is: " + player.getTotal());
+                System.out.println("Dealer Total is: " + dealer.getDealerTotal());
+            }
+            if(dealer.getTotal() < 17 || player.getTotal() < 21){
+                dealer.hit();
+            }
+            if(answer.equals("Stand")){
+                System.out.println("Your Total is: " + player.getTotal());
+                System.out.println("The Dealer Total is: " + dealer.getTotal());
+                if(player.getTotal() > dealer.getTotal()){
+                    System.out.println("You Have the Better Hand. You Win!");
+                }else{
+                    System.out.println("Dealer Has Better Hand. You Lost");
+                }
+            }
+            if(player.getTotal() > 21){
+                System.out.println("Your Total is: " + player.getTotal()+ " You Busted");
+                System.out.println();
+                System.out.println("Dealer Hand: " + dealer.getTotal() + " Dealer Won");
+            }
+            
+        }
     }
 }
