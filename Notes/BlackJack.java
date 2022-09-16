@@ -12,6 +12,11 @@ public class BlackJack
     public static void game(){
         Hand player = new Hand();
         Hand dealer = new Hand();
+        System.out.println("Are you Ready To Play BlackJack!!!");
+        System.out.println();
+        System.out.println("No need to Answer Its Yes");
+        System.out.println();
+        System.out.println();
         System.out.println("Your got a "+ player.getCard1()+" and a "+ player.getCard2()+" ");
         System.out.println("Total is: " + player.getTotal());
         System.out.println("The Dealer's card is " + dealer.getDealerTotal());
@@ -32,16 +37,34 @@ public class BlackJack
                 System.out.println("The Dealer Total is: " + dealer.getTotal());
                 if(player.getTotal() > dealer.getTotal()){
                     System.out.println("You Have the Better Hand. You Win!");
-                }else{
-                    System.out.println("Dealer Has Better Hand. You Lost");
+                    return;
                 }
             }
+
             if(player.getTotal() > 21){
-                System.out.println("Your Total is: " + player.getTotal()+ " You Busted");
+                System.out.println(player.getTotal()+ " You Busted");
                 System.out.println();
                 System.out.println("Dealer Hand: " + dealer.getTotal() + " Dealer Won");
+                return;
+            }else if(player.getTotal() == dealer.getTotal()){
+                System.out.println("Its A Draw");
+                return;
+            }else if(player.getTotal() == 21){
+                System.out.println("You Have 21! You Win!");
+                System.out.println();
+                System.out.println("Dealer had: " + dealer.getTotal());
+                return;
+            }else if(dealer.getTotal() == 21){
+                System.out.println("Dealer has 21. You lost");
+                System.out.println();
+                System.out.println("You had: " + player.getTotal());
+                return;
+            } else if(dealer.getTotal() > 21){
+                System.out.println(dealer.getTotal()+ " Dealer Busted");
+                System.out.println();
+                System.out.println("Your Hand: " + player.getTotal() + " You Won");
+                return;
             }
-            
         }
     }
 }
