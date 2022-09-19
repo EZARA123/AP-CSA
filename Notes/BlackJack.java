@@ -24,7 +24,7 @@ public class BlackJack
 
         while(dealer.getDealerTotal() < 21 && player.getTotal() < 21){
             String answer = scanner.next();
-            if(answer.equals("Hit")){
+            if(answer.equals("hit")){
                 player.hit();
                 System.out.println("Your new Total is: " + player.getTotal());
                 System.out.println("Dealer Total is: " + dealer.getDealerTotal());
@@ -32,7 +32,7 @@ public class BlackJack
             if(dealer.getTotal() < 17 || player.getTotal() < 21){
                 dealer.hit();
             }
-            if(answer.equals("Stand")){
+            if(answer.equals("stand")){
                 System.out.println("Your Total is: " + player.getTotal());
                 System.out.println("The Dealer Total is: " + dealer.getTotal());
                 if(player.getTotal() > dealer.getTotal()){
