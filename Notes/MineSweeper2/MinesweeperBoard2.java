@@ -12,15 +12,15 @@ import javax.swing.*;
 import java.awt.*;
 import java.util.ArrayList;
 
-public class MinesweeperBoard{
-    Cell[][] board;
+public class MinesweeperBoard2{
+    Cell2[][] board;
     int rows;
     int columns;
-    public MinesweeperBoard(int row, int col, int amountOfMines){
+    public MinesweeperBoard2(int row, int col, int amountOfMines){
         //Put the constructor here.
         rows = row;
         columns = col;
-        board = new Cell[rows][columns];
+        board = new Cell2[rows][columns];
 
         //These pieces are for the GUI.
         JFrame frame = new JFrame();
@@ -32,7 +32,7 @@ public class MinesweeperBoard{
         frame.setVisible(true);
     }
 
-    public MinesweeperBoard(){
+    public MinesweeperBoard2(){
         this(10,10,20);
     }
 
@@ -107,7 +107,7 @@ public class MinesweeperBoard{
         JPanel panel = new JPanel(new GridLayout(rows,columns));
         for(int i = 0; i< rows; i++){
             for(int j = 0; j < columns; j++){
-                board[i][j]= new Cell();
+                board[i][j]= new Cell2();
                 panel.add(board[i][j].getButton());
             }
         }

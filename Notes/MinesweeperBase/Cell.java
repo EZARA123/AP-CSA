@@ -1,5 +1,3 @@
-package MineSweeper2;
-
 
 /**
  * Write a description of class Cell here.
