@@ -1,0 +1,10 @@
+#BlueJ class context
+comment0.target=ArrayPractice
+comment1.params=
+comment1.target=ArrayPractice()
+comment2.params=
+comment2.target=void\ print()
+comment3.params=index
+comment3.target=void\ removeIndex(int)
+comment3.text=Removes\ the\ ith\ number\ from\ the\ list,\ and\ replaces\ the\ last\ index\ with\ 0\r\n\ Maintains\ the\ same\ order\ otherwise\r\n\ \r\n\ For\ example\ the\ array\:\ 2\ 7\ 3\ 1\ 4\ 10\r\n\ with\ the\ call\ removeIndex(2)\ becomes\:\r\n
+numComments=4
