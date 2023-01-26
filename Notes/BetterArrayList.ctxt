@@ -1,0 +1,17 @@
+#BlueJ class context
+comment0.target=BetterArrayList
+comment1.params=
+comment1.target=BetterArrayList()
+comment2.params=
+comment2.target=void\ addStuff()
+comment3.params=
+comment3.target=void\ printFirstLetter()
+comment4.params=name
+comment4.target=void\ addItem(java.lang.String)
+comment5.params=
+comment5.target=java.lang.String\ changeFirstItem()
+comment6.params=index
+comment6.target=void\ removeItems(int)
+comment7.params=name
+comment7.target=void\ addFirstItem(java.lang.String)
+numComments=8
