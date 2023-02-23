@@ -1,12 +1,11 @@
 
 /**
- * Write a description of class SideProject here.
+ * Write a description of class InsertionSort here.
  *
  * @author (your name)
  * @version (a version number or a date)
  */
-public class SideProject
+public class InsertionSort
 {
     
-  
 }
